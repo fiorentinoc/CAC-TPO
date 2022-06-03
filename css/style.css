@@ -14,6 +14,7 @@ body {
 
 /* Utilidades */
 .container1 {
+
     width: 80%;
     max-width: 1280px;
     margin-left: auto;
@@ -168,7 +169,7 @@ body {
     display: block;
 }
 
-.respmenu input:checked ~ .fa-bars, .navbarr-link:active {
+.respmenu input:checked ~ .fa-bars  {
     display: none;
 }
 
@@ -344,6 +345,11 @@ main {
 }
 
 /* FOOTER */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .bgn-footer {
     background-color: #214037;
     color: #E2F2C9;
