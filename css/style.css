@@ -83,7 +83,7 @@ body {
 .cover {
     display: flex;
     width: 100vw;
-    height: calc(100vh - 18.75em);
+    height: 100vh; /* calc(100vh - 18.75em); */
     justify-content: center;
     align-items: flex-start;
     color: white;
@@ -94,7 +94,46 @@ body {
 .cover-item {
     width: 60%;
 }
-
+/* Animacion */
+.animacion1 {
+    animation-duration: 3s;
+    animation-name: slidein1;
+}
+@keyframes slidein1 {
+    from {
+        margin-left: 100%;
+    }
+    to {
+        margin-left: 0%;
+    }
+}
+.animacion2 {
+    animation-duration: 2s;
+    animation-name: slidein2;
+}
+@keyframes slidein2 {
+    from {
+        margin-right: 100%;
+    }
+    to {
+        margin-right: 0%;
+    }
+}
+/* youtube responsivo */
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+.embed-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* ----------------------- */
 @media (min-width: 768px) {
     .navbar {
         flex-direction: row;
@@ -122,7 +161,19 @@ body {
         margin-bottom: 0;
     }
 }
+
 /* Menu responsivo */
+/* .navbarra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (min-width: 768px) { */
+    .navbarra{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
 .respmenu a {
     color: white;
     text-decoration: none;
@@ -157,7 +208,7 @@ body {
 .respmenu {
     color: white;
     position: relative;
-    background: #123456;
+    /* background: #123456; */
     min-height: 32px;
 }
 
@@ -198,6 +249,9 @@ body {
     background-color: white;
     color: black;
     border-radius: 0.5em;
+}
+@media (max-width: 768px) {
+    
 }
 
 /* MAIN */
